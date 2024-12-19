@@ -1,0 +1,90 @@
+
+
+  <div class="roles_content">
+    <div class="roles_header_items">
+  
+      <div class="roles_left_items">
+          <button class="add_role_btn" (click)="openAddRoleDialog()"> <i class="las la-plus"></i><span>Add Role</span></button>
+      </div>
+  
+      <div class="roles_right_items">
+         <div class="input_search_area">
+             <i class="las la-search"></i>
+             <input 
+             type="text" 
+             class="search_role" 
+             placeholder="Search..." 
+             [value]="selectedOption.name"
+             #searchInput
+             >
+         </div>
+         
+         <div class="select_search_type">
+            <div class="select_search_btn" (click)="(systemService.showDropList.next(!systemService.showDropList.value))">
+              <span id="text">{{selectedOption.name}}</span>
+              <i class="las la-angle-down" [ngClass]="systemService.showDropList.value ? 'rotateArrowDown': 'rotateArrowUp'"></i>
+            </div>
+            <ul class="list" [ngClass]="{'showList':systemService.showDropList.value}">
+              <li class="option" *ngFor="let option of options"  (click)="selectOptionFilter(option)">
+                <i class="las" [ngClass]="option.icon"></i>
+                <span class="option_text">{{option.name}}</span> 
+              </li>
+            </ul>
+          </div>
+      </div>
+  
+     
+  
+    </div>
+     <div class="role_tables">
+        <table class="table">  
+          <caption class="title_header">
+            <h2>Roles</h2>
+          </caption>   
+          <thead>
+            <tr class="cell_title">
+              <td>Check</td>
+              <td>Name</td>
+              <td>Tags</td>
+              <td>Permission edit</td>
+              <td>CRUD</td>
+            </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let role of groupRoles">
+               <td class="checkbox_cell">          
+                  <input type="checkbox" [(ngModel)]="role.checked"/>
+               </td>
+               <td class="rolenames_cell">          
+                {{role.title}}
+               </td>
+               <td class="tag_cell">          
+               <div style="display: flex; flex-flow: row wrap;"> <p *ngFor="let item of role.tags">{{item}}</p></div>
+               </td>
+               <td class="permission_cell">          
+                <a (click)="editPermittions(role)">Role Permission</a>
+               </td>
+               <td class="crud_cell">          
+                  <a (click)="editRole(role)"><i class="las la-edit"></i></a>
+                  <a (click)="deleteRole(role)"><i class="las la-trash-alt"></i></a>
+               </td>
+          </tr>   
+          </tbody>
+        </table>
+        <div *ngIf="!isSpinnerBarOn && !totalAmountElement" class="empty_role">
+           <p>Group is empty</p>
+        </div>
+        <div class="spinner_bar" *ngIf="isSpinnerBarOn">
+           <mat-spinner [diameter]="40"></mat-spinner>
+        </div>
+  
+        <app-role-pagination
+        *ngIf="totalAmountElement"
+        [totalAmount]="totalAmountElement"
+        [currentPage]="currentPage"
+        (changePage)="changePage($event)"
+        ></app-role-pagination>
+     </div>
+     
+  </div>
+  

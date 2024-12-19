@@ -1,0 +1,64 @@
+<div class="mat_dialog_container">
+  <div class="mat_dialog_header">
+    <h3>{{data.type === typeDialog.add ? 'Add group' : 'Edit group'}}</h3>
+  </div>  
+    <form class="add_group_menu" [formGroup]="addGroupForm" (ngSubmit)="onSubmit()">
+      <div class="group_name_section">
+        <label for="groupName" class="group_name_title title">Group Name</label>
+        <input
+         [ngClass]="{'has_error': addGroupForm.get('groupname').touched && addGroupForm.get('groupname').invalid}"
+         type="text" 
+         id="groupName" 
+         class="inp_group_name"
+         formControlName="groupname"
+         placeholder="Group name"
+         >
+         <p class="error_message"
+           *ngIf="addGroupForm.get('groupname').touched && addGroupForm.get('groupname').invalid"
+           >
+           Group name is required
+          </p>
+      </div>
+       <div class="group_type_section">
+        <label for="groupType" class="group_type_title title">Group Type</label>
+        <select 
+        [ngClass]="{'has_error': addGroupForm.get('grouptype').touched && addGroupForm.get('grouptype').invalid}"
+        name="select" 
+        id="group_type" 
+        class="select_option_group" 
+        formControlName="grouptype"
+         >
+          <option [value]="groups" *ngFor="let groups of groupTypeList"  
+         >{{groups}}</option>       
+        </select>
+        <p class="error_message"  
+        *ngIf="addGroupForm.get('grouptype').touched && addGroupForm.get('grouptype').invalid"
+        >
+        This field is required
+      </p>
+       </div>
+        <div class="add_group_section">
+          <button 
+          class="add_group_btn" 
+          [disabled]="addGroupForm.invalid" 
+          type="submit"
+          >
+          <span>{{data.type === typeDialog.add ? 'Add group' : 'Edit group'}}</span>
+        </button>
+          <!-- <input 
+          class="add_group_btn" 
+          [disabled]="addGroupForm.invalid" 
+          type="submit"
+          value="{{data.type === typeDialog.add ? 'Add group' : 'Edit group'}}"
+          /> -->
+        
+        
+          <button type="button" class="cancel_btn" (click)="cancel()"><span>Cancel</span></button>        
+        </div>
+     </form>
+     <div class="add_group_backdrop" *ngIf="showBackDrop">
+        <mat-spinner [diameter]="40"></mat-spinner>
+     </div>
+</div>
+
+

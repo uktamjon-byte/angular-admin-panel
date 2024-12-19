@@ -1,0 +1,19 @@
+<ul class="pagination">
+    <li class="pagination_item" (click)="prev()">
+      <i class="las la-angle-left"></i>
+    </li>
+  
+    <li
+      class="pagination_item"
+      *ngFor="let item of listPaging; index as i" 
+      [class.pagination_item_active]="item.active"
+      (click)="goToPage(i)"
+    >
+      {{item.page}}
+    </li>
+  
+    <li class="pagination_item" (click)="next()">
+      <i class="las la-angle-right"></i>
+    </li>
+  </ul>
+<!-- [class.pagination__item_active]="item.active" -->

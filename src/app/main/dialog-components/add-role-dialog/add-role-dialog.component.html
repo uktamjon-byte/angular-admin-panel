@@ -1,0 +1,127 @@
+<div class="add_role_dialog_container">
+      <h3>
+        <!-- {{data.type === typeDialog.add ? 'Add group' : 'Edit group'}} -->
+        Add Role
+     </h3>
+<form class="add_role_form" [formGroup]="addRoleForm" (ngSubmit)="onSubmit()">
+<div class="add_role_section" *ngIf="isAddRole">
+  <div class="role_name_section">
+    <label for="roleName" class="role_name_title title">Enter role name</label>
+    <input
+     [ngClass]="{'has_error': addRoleForm.get('rolename').touched && addRoleForm.get('rolename').invalid}"
+     type="text" 
+     id="roleName" 
+     class="inp_role_name"
+     formControlName="rolename"
+     placeholder="Role name"
+     >
+     <p class="error_message"
+       *ngIf="addRoleForm.get('rolename').touched && addRoleForm.get('rolename').invalid"
+       >
+       Group name is required
+      </p>
+  </div>
+  
+  <div class="role_tags_section">
+      <label for="role_tags" class="role_tags_title title">Enter role tags</label>
+      <div class="added_tags_area"  *ngIf="currentTagsBox">
+          <div class="added_tags" *ngFor="let tag of addedTags; index as i">
+              <span>{{tag}}</span>
+              <i class="las la-times" (click)="deleteTag(i)"></i>
+          </div>            
+      </div>
+
+     <div class="added_roles_area">
+         <input
+         [ngClass]="{'has_error': addRoleForm.get('roletags').touched && addRoleForm.get('roletags').invalid && addedTags.length ===0}"
+          type="text" 
+          id="role_tags" 
+          class="inp_role_tags"
+          formControlName="roletags"
+          placeholder="add tags ..."
+        >
+       
+        <div class="add_btn_div">
+          <button type="button" class="add_btn" (click)="addTag()">Add</button>
+        </div>
+         
+         
+      </div>
+      <div class="error_message_div">
+        <p class="error_message"
+           *ngIf="addRoleForm.get('roletags').touched && addRoleForm.get('roletags').invalid && addedTags.length ===0"
+          >
+         Group name is required
+        </p>
+      </div>
+    </div>
+    <div class="btn_section">
+      <button 
+      class="next_btn"  
+      [type]="isEdit? 'submit':'button'"
+      (click)="nextToPermissionList(isEdit)"
+      [disabled]="addedTags.length ===0 || addRoleForm.get('rolename').invalid"
+      >
+      <span>{{isEdit? 'Save': 'Next'}}</span>
+    </button>
+    <button 
+    type="button" 
+    class="cancel_btn" 
+    (click)="closeDialog()"
+    >
+    <span>Close</span>
+  </button>    
+    </div>
+</div>
+        
+
+          <div class="role_permissions" *ngIf="isChooseOption">
+            <div class="role_permission_item" *ngFor="let perItem of permissionsLists; index as i">
+              <span (click)="activatePermission(i, perItem)">{{perItem.permission | permissionPipe}}</span>
+              <mat-slide-toggle [checked]="perItem.active"></mat-slide-toggle>
+            </div>
+  
+            <div class="btn_section" >
+              <button 
+              [type]="!isEdit? 'submit':'button'"
+              class="next_btn submit"  
+              >
+              <span>Submit</span>
+            </button>
+            <button 
+            type="button" 
+            class="cancel_btn" 
+            (click)="backToForm()"
+            >
+            <span>Back</span>
+          </button>
+          </div>
+
+        
+        </div>
+        <div class="add_group_backdrop" *ngIf="showBackDrop">
+          <mat-spinner [diameter]="40"></mat-spinner>
+       </div>
+       </form>
+      
+
+       
+          <!-- <div class="role_permission_item">
+            <span>edut</span>
+            <mat-slide-toggle [(ngModel)]="isChecked"></mat-slide-toggle>
+          </div>
+          <div class="role_permission_item">
+            <span>Edit</span>
+            <mat-slide-toggle [(ngModel)]="isChecked"></mat-slide-toggle>
+          </div>
+          <div class="role_permission_item">
+            <span>Edit</span>
+            <mat-slide-toggle [(ngModel)]="isChecked"></mat-slide-toggle>
+          </div>
+          <div class="role_permission_item">
+            <span>Edit</span>
+            <mat-slide-toggle [(ngModel)]="isChecked"></mat-slide-toggle>
+          </div> -->
+
+            
+  </div>

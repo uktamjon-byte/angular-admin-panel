@@ -1,0 +1,840 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "password",
+      "name": "login"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Admin is a legend",
+      "groupType": "Admins"
+    },
+    {
+      "id": 2,
+      "accauntId": 1,
+      "title": "Manager++++",
+      "groupType": "Managers"
+    },
+    {
+      "id": 3,
+      "accountId": 1,
+      "title": "Supports",
+      "groupType": "Supports"
+    },
+    {
+      "id": 4,
+      "title": "uktam",
+      "groupType": "Supports"
+    },
+    {
+      "title": "uktamtoshmatov",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "accauntId": 0,
+      "title": "haalandjon",
+      "groupType": "Managers"
+    },
+    {
+      "title": "messi",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 7
+    },
+    {
+      "title": "eretert",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 8
+    },
+    {
+      "title": "fggggfgffggfg",
+      "accountId": 0,
+      "groupType": "Managers",
+      "id": 9
+    },
+    {
+      "title": "Abdurahmon",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 10
+    },
+    {
+      "title": "реркерке",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 11
+    },
+    {
+      "title": "dgdgdfgd",
+      "accountId": 0,
+      "groupType": "Managers",
+      "id": 12
+    },
+    {
+      "title": "ewewew",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 13
+    },
+    {
+      "title": "fgfg",
+      "accountId": 0,
+      "groupType": "Managers",
+      "id": 14
+    },
+    {
+      "title": "rteter",
+      "accountId": 0,
+      "groupType": "Supports",
+      "id": 15
+    },
+    {
+      "title": "ssssss",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 16
+    },
+    {
+      "title": "sissy",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "accauntId": 0,
+      "title": "jamal hill",
+      "groupType": "Admins"
+    },
+    {
+      "title": "sasass",
+      "accountId": 0,
+      "groupType": "Managers",
+      "id": 19
+    },
+    {
+      "title": "dscs",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 20
+    },
+    {
+      "title": "ыффыфыфыфы",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 21
+    },
+    {
+      "id": 22,
+      "accauntId": 0,
+      "title": "asshole",
+      "groupType": "Admins"
+    },
+    {
+      "title": "yuytuytu",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 23
+    },
+    {
+      "title": "yjyyjy",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 24
+    },
+    {
+      "title": "wewe",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 25
+    },
+    {
+      "title": "zdd",
+      "accountId": 0,
+      "groupType": "Supports",
+      "id": 26
+    },
+    {
+      "title": "this group sucks",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 27
+    },
+    {
+      "title": "this group sucks",
+      "accountId": 0,
+      "groupType": "Supports",
+      "id": 28
+    },
+    {
+      "title": "dead",
+      "accountId": 0,
+      "groupType": "Admins",
+      "id": 29
+    }
+  ],
+  "groupRoles": [
+    {
+      "groupId": 2,
+      "title": "bg",
+      "tags": [
+        "g"
+      ],
+      "id": 33
+    },
+    {
+      "groupId": 5,
+      "title": "55",
+      "tags": [
+        "33"
+      ],
+      "id": 36
+    },
+    {
+      "id": 38,
+      "groupId": 4,
+      "title": "coward",
+      "tags": [
+        "egg",
+        "chich",
+        "dfd"
+      ]
+    },
+    {
+      "groupId": 13,
+      "title": "stupid stuff",
+      "tags": [
+        "dcxcjhhjjh",
+        "mnnm"
+      ],
+      "id": 43
+    },
+    {
+      "groupId": 2,
+      "title": "gn",
+      "tags": [
+        "fng"
+      ],
+      "id": 44
+    },
+    {
+      "groupId": 14,
+      "title": "repeling women",
+      "tags": [
+        "fggf",
+        "hjh"
+      ],
+      "id": 45
+    },
+    {
+      "groupId": 14,
+      "title": "ееу",
+      "tags": [
+        "hhiih"
+      ],
+      "id": 46
+    },
+    {
+      "groupId": 6,
+      "title": "rutr",
+      "tags": [
+        "utyut",
+        "yuyu",
+        "uytuy",
+        "yutyuy",
+        "utyuy",
+        "yutu"
+      ],
+      "id": 47
+    },
+    {
+      "groupId": 7,
+      "title": "rgdd",
+      "tags": [
+        "dddddddddddddd",
+        "dddddd"
+      ],
+      "id": 52
+    },
+    {
+      "groupId": 7,
+      "title": "legend",
+      "tags": [
+        "fdg"
+      ],
+      "id": 53
+    },
+    {
+      "groupId": 7,
+      "title": "ываыв",
+      "tags": [
+        "чсчсч",
+        "чсч"
+      ],
+      "id": 54
+    },
+    {
+      "groupId": 7,
+      "title": "вмввы",
+      "tags": [
+        "см"
+      ],
+      "id": 55
+    },
+    {
+      "groupId": 7,
+      "title": "dfdf",
+      "tags": [
+        "dfd"
+      ],
+      "id": 56
+    },
+    {
+      "groupId": 7,
+      "title": "dsfs",
+      "tags": [
+        "sdffd",
+        "sdfsd"
+      ],
+      "id": 57
+    },
+    {
+      "groupId": 7,
+      "title": "Im the greatest",
+      "tags": [
+        "hero",
+        "popular",
+        "cool",
+        "young",
+        "handsome"
+      ],
+      "id": 58
+    },
+    {
+      "title": "ali",
+      "tags": [
+        [
+          "Manager",
+          "csc",
+          "нор",
+          "кнекн",
+          "ененк"
+        ]
+      ],
+      "id": 61
+    },
+    {
+      "title": "ali",
+      "tags": [
+        "Manager",
+        "csc",
+        "нор",
+        "кнекн",
+        "ененк"
+      ],
+      "id": 63
+    },
+    {
+      "groupId": 3,
+      "title": "sdfsdf",
+      "tags": [
+        "sdfsdf"
+      ],
+      "id": 64
+    },
+    {
+      "groupId": 1,
+      "title": "rgdfg",
+      "tags": [
+        "dfg"
+      ],
+      "id": 66
+    },
+    {
+      "groupId": 1,
+      "title": "ertre",
+      "tags": [
+        "rre"
+      ],
+      "id": 67
+    },
+    {
+      "groupId": 1,
+      "title": "wetrew",
+      "tags": [
+        "werew"
+      ],
+      "id": 68
+    },
+    {
+      "groupId": 1,
+      "title": "werere",
+      "tags": [
+        "ere"
+      ],
+      "id": 70
+    },
+    {
+      "groupId": 4,
+      "title": "xgxc",
+      "tags": [
+        "xgf"
+      ],
+      "id": 74
+    },
+    {
+      "groupId": 4,
+      "title": "sayfi",
+      "tags": [
+        "fds"
+      ],
+      "id": 75
+    },
+    {
+      "groupId": 4,
+      "title": "sayfi 2",
+      "tags": [
+        "ada"
+      ],
+      "id": 76
+    },
+    {
+      "groupId": 4,
+      "title": "zfz",
+      "tags": [
+        "zzzzzzzzzz"
+      ],
+      "id": 77
+    },
+    {
+      "groupId": 4,
+      "title": "dhdfdfh",
+      "tags": [
+        "dfhfd"
+      ],
+      "id": 78
+    },
+    {
+      "groupId": 4,
+      "title": "ываыва",
+      "tags": [
+        "ываыв"
+      ],
+      "id": 79
+    },
+    {
+      "groupId": 4,
+      "title": "egre",
+      "tags": [
+        "retr"
+      ],
+      "id": 80
+    },
+    {
+      "groupId": 3,
+      "title": "just",
+      "tags": [
+        "dfd"
+      ],
+      "id": 81
+    },
+    {
+      "groupId": 3,
+      "title": "rtyr",
+      "tags": [
+        "rtyr"
+      ],
+      "id": 82
+    },
+    {
+      "groupId": 3,
+      "title": "rter",
+      "tags": [
+        "ret"
+      ],
+      "id": 83
+    },
+    {
+      "id": 84,
+      "groupId": 29,
+      "title": "viva",
+      "tags": [
+        "vice",
+        "ssssf",
+        "fdfd"
+      ]
+    },
+    {
+      "groupId": 3,
+      "title": "yuuy",
+      "tags": [
+        "yu"
+      ],
+      "id": 85
+    },
+    {
+      "groupId": 1,
+      "title": "tht",
+      "tags": [
+        "fhfhf"
+      ],
+      "id": 86
+    },
+    {
+      "groupId": 1,
+      "title": "afdasf",
+      "tags": [
+        "sfsf"
+      ],
+      "id": 87
+    },
+    {
+      "groupId": 1,
+      "title": "chfhf",
+      "tags": [
+        "dfd"
+      ],
+      "id": 88
+    },
+    {
+      "groupId": 1,
+      "title": "wrwer",
+      "tags": [
+        "were"
+      ],
+      "id": 89
+    },
+    {
+      "groupId": 1,
+      "title": "awrer",
+      "tags": [
+        "wrew"
+      ],
+      "id": 90
+    },
+    {
+      "groupId": 1,
+      "title": "egeger",
+      "tags": [
+        "dsgd"
+      ],
+      "id": 91
+    },
+    {
+      "groupId": 1,
+      "title": "CAC",
+      "tags": [
+        "sfsd"
+      ],
+      "id": 93
+    },
+    {
+      "groupId": 1,
+      "title": "xvx",
+      "tags": [
+        "zvzx"
+      ],
+      "id": 94
+    },
+    {
+      "groupId": 3,
+      "title": "hjlh",
+      "tags": [
+        "hjl"
+      ],
+      "id": 95
+    },
+    {
+      "id": 96,
+      "groupId": 1,
+      "title": "grr",
+      "tags": [
+        "dg"
+      ]
+    }
+  ],
+  "rolePermissions": [
+    {
+      "id": 1,
+      "roleId": 3,
+      "permissions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "roleId": 69,
+      "permissions": [
+        1,
+        4,
+        6
+      ],
+      "id": 2
+    },
+    {
+      "roleId": 70,
+      "permissions": [
+        1,
+        4,
+        6
+      ],
+      "id": 3
+    },
+    {
+      "roleId": 71,
+      "permissions": [
+        2,
+        6
+      ],
+      "id": 4
+    },
+    {
+      "roleId": 72,
+      "permissions": [
+        1,
+        4
+      ],
+      "id": 5
+    },
+    {
+      "roleId": 73,
+      "permissions": [
+        1
+      ],
+      "id": 6
+    },
+    {
+      "roleId": 74,
+      "permissions": [],
+      "id": 7
+    },
+    {
+      "roleId": 75,
+      "permissions": [
+        3,
+        7,
+        1
+      ],
+      "id": 8
+    },
+    {
+      "roleId": 76,
+      "permissions": [
+        1,
+        4,
+        7
+      ],
+      "id": 9
+    },
+    {
+      "roleId": 75,
+      "permissions": [
+        1,
+        3,
+        6
+      ],
+      "id": 10
+    },
+    {
+      "roleId": 76,
+      "permissions": [
+        1,
+        3,
+        7
+      ],
+      "id": 11
+    },
+    {
+      "roleId": 77,
+      "permissions": [
+        6,
+        5,
+        4
+      ],
+      "id": 12
+    },
+    {
+      "roleId": 78,
+      "permissions": [
+        1
+      ],
+      "id": 13
+    },
+    {
+      "roleId": 79,
+      "permissions": [
+        1,
+        4
+      ],
+      "id": 14
+    },
+    {
+      "roleId": 80,
+      "permissions": [
+        1,
+        6
+      ],
+      "id": 15
+    },
+    {
+      "roleId": 81,
+      "permissions": [
+        1,
+        4,
+        7
+      ],
+      "id": 16
+    },
+    {
+      "roleId": 82,
+      "permissions": [
+        1,
+        5
+      ],
+      "id": 17
+    },
+    {
+      "roleId": 83,
+      "permissions": [
+        1,
+        5
+      ],
+      "id": 18
+    },
+    {
+      "roleId": 86,
+      "permissions": [
+        1,
+        5
+      ],
+      "title": "rdd",
+      "id": 21
+    },
+    {
+      "roleId": 84,
+      "permissions": [
+        1,
+        2,
+        3
+      ],
+      "title": "viva",
+      "id": 22
+    },
+    {
+      "roleId": 85,
+      "permissions": [
+        1,
+        2,
+        4
+      ],
+      "title": "рфвшан",
+      "id": 23
+    },
+    {
+      "roleId": 85,
+      "permissions": [
+        1,
+        4
+      ],
+      "id": 24
+    },
+    {
+      "roleId": 86,
+      "permissions": [
+        2,
+        5
+      ],
+      "title": "tht",
+      "id": 25
+    },
+    {
+      "roleId": 87,
+      "permissions": [
+        1,
+        3
+      ],
+      "title": "afdasf",
+      "id": 26
+    },
+    {
+      "roleId": 88,
+      "permissions": [
+        4,
+        7
+      ],
+      "title": "chfhf",
+      "id": 27
+    },
+    {
+      "roleId": 89,
+      "permissions": [
+        2,
+        6
+      ],
+      "title": "wrwer",
+      "id": 28
+    },
+    {
+      "roleId": 90,
+      "permissions": [
+        4,
+        7
+      ],
+      "title": "awrer",
+      "id": 29
+    },
+    {
+      "roleId": 91,
+      "permissions": [
+        4,
+        6
+      ],
+      "title": "egeger",
+      "id": 30
+    },
+    {
+      "roleId": 93,
+      "permissions": [
+        2,
+        4
+      ],
+      "title": "CAC",
+      "id": 32
+    },
+    {
+      "roleId": 94,
+      "permissions": [
+        1,
+        3
+      ],
+      "title": "xvx",
+      "id": 33
+    },
+    {
+      "roleId": 95,
+      "permissions": [
+        2,
+        4
+      ],
+      "title": "hjlh",
+      "id": 34
+    },
+    {
+      "roleId": 96,
+      "permissions": [],
+      "title": "grr",
+      "id": 35
+    }
+  ]
+}

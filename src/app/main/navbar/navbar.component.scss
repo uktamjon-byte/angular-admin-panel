@@ -1,0 +1,88 @@
+
+//dialog menu
+::ng-deep .mat-dialog-container{
+    background-color: #fff;
+    padding: 0 !important;
+  }
+
+
+header{
+    .la-arrow-circle-right{
+        cursor: pointer;
+    }
+   
+
+    
+
+    .header_items{
+
+
+        &.header_active{
+            @media screen and(max-width: 1600px){
+                &{
+                    width: 100%;
+                }
+            }
+
+            // @media screen and(max-width: 768.1px){
+            //     &{
+                    
+            //     }
+            // }
+
+            // @media screen and (max-width: 576.1px){
+            //     &{
+                  
+            //     }
+            // }
+        }
+        position: fixed;
+        top: 0;
+        width: calc(100% - 250px);    
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 20;
+        padding: 0 15px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        .left_header_items{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            h3{
+                margin: 0;
+                color: #212529;
+                line-height: 1.5;
+                font-weight: 400;
+             }
+             i{
+                margin-right: 10px;
+                font-size:  1.5rem;
+                color: #535353;
+             }
+        }
+        .rightside_header_items{
+            i{
+                font-size: 26px;
+            }
+        }
+       
+
+    }
+    
+    @media screen and (max-width: 768.1px){
+
+        .header_items{
+            width: calc(100% - 70px);
+        }
+    }
+
+    @media screen and (max-width: 576.1px){
+        .header_items{
+            width: 100%;
+            left: 0;
+        }
+    }
+}

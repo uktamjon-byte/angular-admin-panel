@@ -1,0 +1,25 @@
+@mixin scrollStyle($overY) {
+    @if $overY {
+      overflow: hidden auto;
+    } @else {
+      overflow: auto hidden;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+      border-radius: 10px;
+      background-color: rgb(218, 209, 209);
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 5px;
+      border-radius: 10px;
+      background-color: rgb(107, 107, 107);
+      display: none;
+    }
+    &:hover::-webkit-scrollbar {
+      display: block;
+    }
+    &:hover::-webkit-scrollbar-thumb {
+      display: block;
+    }
+  }

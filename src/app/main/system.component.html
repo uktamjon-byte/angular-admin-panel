@@ -1,0 +1,12 @@
+<app-sidebar></app-sidebar>
+<div class="main" [ngClass]="{'main_active': systemService.toggleSidebar.value}">
+    <div class="sub_content">
+        <router-outlet></router-outlet>
+    </div>
+    <app-navbar></app-navbar>
+    <div class="back_drop" 
+        (click)="showBackdrop()">
+    </div>
+</div>
+
+ 

@@ -1,0 +1,56 @@
+<div class="card">
+        <div class="container">
+            <div class="header">
+                <h4>Welcome back</h4>
+                <span>Sign in to continue</span>
+            </div>
+           <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="log_items"> 
+                <input type="text"
+                 value="login"
+                 id="input_text" 
+                 class="log_inp inp_text" 
+                 placeholder="Username"
+                 formControlName="username"
+                 [ngClass]="{'has-error':loginForm.get('username').touched && loginForm.get('username').invalid}"
+                 >
+                 
+                <i class="las la-user"></i>
+                <p class="error_message" *ngIf="loginForm.get('username').touched && loginForm.get('username').invalid">
+                    <span class="error_message field-empty" *ngIf="loginForm.get('username').errors['required']">Enter your name</span>
+                </p>
+            </div>
+    
+            <div class="log_items">
+                <input 
+                [type]="passwordState? 'text': 'password'" 
+                id="input_password" 
+                class="log_inp inp_password" 
+                placeholder="Password"
+                value="password"
+                formControlName="password"
+                [ngClass]="{'has-error':loginForm.get('password').touched && loginForm.get('password').invalid}"
+                >
+                <i class="las la-lock"></i>
+                <p class="error_message" *ngIf="loginForm.get('password').touched && loginForm.get('password').invalid">
+                    <span 
+                    class="error_message field-empty" 
+                    *ngIf="loginForm.get('password').errors['required']">Enter your password</span>
+                  <span *ngIf="loginForm.get('password')['errors']['minlength'] && 
+                  loginForm.get('password')['errors']['minlength']['requiredLength']">Password has to contain
+                        {{ loginForm.get('password')['errors']['minlength']['requiredLength'] }}
+                  symbols.Now there is {{ loginForm.get('password')['errors']['minlength']['actualLength'] }}</span>
+                  
+                </p>
+                <mat-checkbox class="example-margin" [checked]="passwordState" (change)="passwordState = !passwordState">Show password</mat-checkbox>
+            </div>
+    
+            <button class="submit_btn" type="submit"><span>{{'Submit' | uppercase }}</span></button>
+            
+           </form>
+           <div class="spinner_bar" *ngIf="showSpinnerBar">
+            <mat-spinner [diameter]="50"></mat-spinner>
+           </div>
+        </div>
+    </div>
+    

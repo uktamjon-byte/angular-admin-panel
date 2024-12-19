@@ -1,0 +1,31 @@
+<div class="role_permissions">
+  <h1>Edit permissions</h1>
+  <h3>Permission name: <span>{{permissionName}}</span></h3>
+    <div class="role_permission_item" *ngFor="let perName of permissionsLists">
+      <span (click)="activatePermission(perName)">{{perName.permission | permissionPipe}}</span>
+      <mat-slide-toggle [checked]="perName.active"></mat-slide-toggle>
+    </div>
+
+    <div class="btn_section">
+      <button 
+      *ngIf="isSaveBtnOn"
+      type="submit"
+      class="next_btn submit"  
+      (click)="savePermissions()"
+      >
+      <span>Save</span>
+    </button>
+    <button 
+    type="button" 
+    class="cancel_btn"
+    (click)="closeDialog()"
+    >
+    <span>Cancel</span>
+  </button>
+  </div>
+
+<div class="edit_role_backdrop" *ngIf="isBackDropOn">
+  <mat-spinner [diameter]="40"></mat-spinner>
+</div>
+</div>
+

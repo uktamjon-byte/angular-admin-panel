@@ -1,0 +1,11 @@
+<header>
+    <div class="header_items" [ngClass]="{'header_active': systemService.toggleSidebar.value}">
+        <div class="left_header_items">
+            <div class="header_toggle_btn" (click)="systemService.toggleSidebar.next(!systemService.toggleSidebar.value)"><i class="las la-bars"></i></div>
+            <h3 class="header_title">Manage Permission</h3>
+        </div>
+        <div class="rightside_header_items" (click)="openComfireDialog()">
+            <i class="las la-arrow-circle-right"></i>
+        </div>
+    </div>
+</header>

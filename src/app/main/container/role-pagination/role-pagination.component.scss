@@ -1,0 +1,20 @@
+.pagination{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 22px;
+    padding-bottom: 6px;
+    //margin-bottom: 6px;
+    .pagination_item{
+       padding: 3px 7px;
+       font-size: 16px;
+       cursor: pointer;
+    }
+    .pagination_item_active{
+        padding: 3px 7px;
+        background-color: #351c56;
+        color: aliceblue;
+        border-radius: 3px;
+        margin: 0 4px;
+    }
+}

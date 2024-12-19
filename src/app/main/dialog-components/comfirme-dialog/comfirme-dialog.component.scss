@@ -1,0 +1,52 @@
+.comfirme_dialog{
+   padding: 15px 15px 10px;
+   border-radius: 3px;
+   width: 310px;
+   position: relative;
+   .delete_role_backdrop{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #a9a9a975;
+   }
+   h2{
+    font-size: 20px;
+    font-family: 'p-medium';
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+   }
+   p{
+    font-size: 17px;
+    font-family: 'p-medium';
+    margin-bottom: 20px;
+    color:rgba(0,0,0,.87) ;
+    span{
+        padding: 2px;
+        background-color: rgb(216, 24, 24);
+        border-radius: 10px;
+        font-family: 'p-light';
+        font-size: 15px;
+    }
+   }
+   .comfirme_buttons{
+   button{
+    padding: 6px 6px;
+    border-radius: 3px;
+    font-family: 'p-light';
+    color: aliceblue;
+   }
+    .sign_out_btn{
+        background-color: rgb(53, 28, 86);
+        margin-right: 4px;     
+    }
+    .cancel_btn{
+        background-color: rgb(201, 57, 46);
+    }
+   }
+}

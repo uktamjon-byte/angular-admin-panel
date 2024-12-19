@@ -1,0 +1,17 @@
+.not-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    h1{
+        color: red;
+        font-size: 30px;
+    }
+    a{
+        padding: 10px 15px;
+        background-color: aqua;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+<!-- <ul>
+    <ng-container *ngFor="let item of Items" >
+        <li  *ngIf="">{{item.name}}</li>
+    </ng-container>
+</ul> -->
+
+<nav class="sidebar" [ngClass]="{'sidebar_active': systemService.toggleSidebar.value}">
+    <div class="sidebar_top">
+        <div class="sidebar_header">
+            <div class="sidebar_title">
+                <i class="las la-universal-access"></i>
+                <h4>Admin Panel</h4>
+            </div>
+            <div class="admin_info">
+                <div class="admin_pic">
+                    <img src="./../../../assets/images/1-.jpg" class="admin" alt="Admin picture">
+               </div>
+               <div class="admin_name">
+                    <span>{{user.username}}</span>
+               </div>              
+             </div>  
+             <div class="add_group_btn">
+               
+                <button class="add_btn" (click)="openDialog()"> <i class="las la-plus"></i><span>Add Group Role</span></button>
+            </div>
+        </div>
+    </div>   
+  
+         <ul class="sidebar_group_list">
+            <li class="saidbar_roles" [routerLinkActive]="'router_link_active'" *ngFor="let group of AllGroups | sortGroups">
+              <div class="add_role_div_link">
+                <a [routerLink]="['addRole', group.id]"><i [class]="group.groupType | iconPipe "></i><span>{{group.title}}</span></a>
+              </div>         
+                <div class="edit_group" type="button" (click)="editGroup(group)"><i class="las la-pencil-alt"></i></div>
+            </li>
+         </ul>
+            
+</nav>

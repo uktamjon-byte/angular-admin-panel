@@ -1,0 +1,12 @@
+<div class="comfirme_dialog">
+    <h2>{{ isDeletable? 'Delete Role': 'Sign Out'}}</h2>
+    <p *ngIf="!isDeletable">Do you want to sign out?'</p>
+    <p *ngIf="isDeletable">Do you want to delete this role? <span>{{title}}</span></p>
+    <div class="comfirme_buttons">
+        <button [type]=" isDeletable? 'submit': 'button'" class="sign_out_btn" (click)="submit()">{{ isDeletable? 'Delete': 'Sign out'}}</button>
+        <button type="button" class="cancel_btn" (click)="closeDialog()">Cancel</button>
+    </div>
+    <div class="delete_role_backdrop" *ngIf="isBackDropOn">
+        <mat-spinner [diameter]="40"></mat-spinner>
+     </div>
+</div>

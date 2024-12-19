@@ -1,0 +1,76 @@
+.role_permissions{
+    width:350px ;
+    height: fit-content;
+    padding: 0 8px;
+    overflow: hidden;
+    position: relative;
+
+    .edit_role_backdrop{
+        position: absolute;
+        background-color: #333333b3; 
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+    }
+    h1{
+        font-family: 'p-medium';
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    h3{
+        font-family: 'p-light';
+        color: black;
+        font-size: 17px;
+        span{
+            font-size: medium;
+            font-family: 'p-medium';
+            background-color: yellow;
+            padding: 2px 3px;
+        }
+    }
+    .role_permission_item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+        span{
+            color: black;
+            font-size: 18px;
+            font-family: 'p-light';
+            cursor: pointer;
+        }
+        .mat-slide-toggle-bar {
+            background-color: rgba(133, 76, 76, 0.5);
+        }
+       
+    }
+
+    .btn_section{
+        margin-bottom: 8px;
+        button{
+            padding: 8px 7px;
+            border-radius: 3px;
+            span{
+                color: aliceblue;
+                font-family: 'p-light';
+                font-size: 15px;
+                
+            }
+        }
+
+        .next_btn{
+            background-color: rgb(53, 28, 86);
+            margin-right: 6px;              
+        }
+        .cancel_btn{
+            background-color: #42c92ef0;
+        }
+    }
+}
